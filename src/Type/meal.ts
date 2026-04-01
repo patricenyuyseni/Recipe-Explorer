@@ -5,5 +5,5 @@ export type Meal = {
   strCategory: string;
   strInstructions: string;
 
-  [key: string]: any; // for dynamic ingredients
+  [key: string]: any; 
 }
