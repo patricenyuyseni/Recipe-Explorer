@@ -6,30 +6,28 @@ interface Props {
 export default function SearchBar({ value, onChange }: Props) {
   return (
     <div className="relative w-full">
-     
-      <span className="absolute inset-y-0 left-3 flex items-center text-gray-400">
+      
+      <span className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">
         🔍
       </span>
 
       <input
         type="text"
-        placeholder="Search recipes..."
+        placeholder="search ingredients, cuisines,..."
         value={value}
         onChange={(e) => onChange(e.target.value)}
         className="
           w-full
-          pl-10 pr-4 py-3
+          h-14
+          pl-14 pr-6
           rounded-full
-          bg-white
-          shadow-sm
-          border border-gray-200
-          text-sm
+          bg-[#efece6]
           text-gray-700
-          placeholder-gray-400
+          placeholder-gray-500
+          text-sm
           focus:outline-none
           focus:ring-2
-          focus:ring-yellow-400
-          focus:border-transparent
+          focus:ring-yellow-500
           transition
         "
       />

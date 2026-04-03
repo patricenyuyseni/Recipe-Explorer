@@ -28,7 +28,7 @@ export default function RecipeDetail() {
   return (
     <div className="bg-[#f7f6f3] min-h-screen px-6 md:px-12 py-8">
       
-      {/* Back Button */}
+     
       <button
         onClick={() => navigate(-1)}
         className="mb-6 px-4 py-2 rounded-full bg-white shadow-sm text-sm hover:bg-gray-100 transition"
@@ -36,10 +36,10 @@ export default function RecipeDetail() {
         ← Back
       </button>
 
-      {/* Main Card */}
+   
       <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
         
-        {/* Image */}
+       
         <div className="w-full h-64 md:h-96 overflow-hidden">
           <img
             src={meal.strMealThumb}
@@ -48,18 +48,18 @@ export default function RecipeDetail() {
           />
         </div>
 
-        {/* Content */}
+        
         <div className="p-6 md:p-10">
           
-          {/* Title */}
+         
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
             {meal.strMeal}
           </h2>
 
-          {/* Grid Layout */}
+       
           <div className="grid md:grid-cols-3 gap-8">
             
-            {/* Ingredients */}
+       
             <div className="md:col-span-1">
               <h3 className="text-lg font-semibold mb-4 text-gray-700">
                 Ingredients
@@ -77,7 +77,7 @@ export default function RecipeDetail() {
               </ul>
             </div>
 
-            {/* Instructions */}
+            
             <div className="md:col-span-2">
               <h3 className="text-lg font-semibold mb-4 text-gray-700">
                 Instructions
