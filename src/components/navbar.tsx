@@ -1,6 +1,3 @@
-import SearchBar from "./searchBar";
-import { Heart } from "lucide-react";
-
 interface Props {
   search: string;
   setSearch: (val: string) => void;
@@ -9,8 +6,8 @@ interface Props {
 export default function Navbar({ search, setSearch }: Props) {
   return (
     <nav className="flex items-center justify-between px-8 py-4 bg-[#f7f6f3]">
+
       
-     
       <div className="flex items-center gap-8">
         <h1 className="text-xl font-semibold">Saffron & Sage</h1>
 
@@ -20,14 +17,35 @@ export default function Navbar({ search, setSearch }: Props) {
         </div>
       </div>
 
-  
-      <div className="w-[420px]">
-        <SearchBar value={search} onChange={setSearch} />
-      </div>
-
-    
+      
       <div className="flex items-center gap-5">
-        <Heart className="w-5 h-5 text-gray-700 cursor-pointer" />
+
+ 
+        <div className="relative w-[260px]">
+          <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+            🔍
+          </span>
+          <input
+            type="text"
+            placeholder="Search recipes..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="
+              w-full
+              h-10
+              pl-9 pr-3
+              rounded-full
+              bg-[#efece6]
+              text-sm
+              outline-none
+            "
+          />
+        </div>
+
+        
+        <span className="text-xl cursor-pointer">❤️</span>
+
+        
         <div className="w-8 h-8 rounded-full bg-gray-300" />
       </div>
     </nav>

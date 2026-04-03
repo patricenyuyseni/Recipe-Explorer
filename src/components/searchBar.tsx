@@ -13,7 +13,7 @@ export default function SearchBar({ value, onChange }: Props) {
 
       <input
         type="text"
-        placeholder="Find ingredients, cuisines, or chefs..."
+        placeholder="search ingredients, cuisines,..."
         value={value}
         onChange={(e) => onChange(e.target.value)}
         className="
