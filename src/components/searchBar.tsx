@@ -6,7 +6,7 @@ interface Props {
 export default function SearchBar({ value, onChange }: Props) {
   return (
     <div className="relative w-full">
-      {/* Icon */}
+      
       <span className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400 text-lg">
         🔍
       </span>
